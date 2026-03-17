@@ -2,6 +2,23 @@
 
 Aplicación móvil de planificación de viajes desarrollada en Flutter.
 
+## 🆕 Novedades
+
+### Sistema de Administración de Contenidos (CMS) - Firebase Integration
+Se implementó exitosamente un sistema completo de gestión de contenidos turísticos integrado con Firebase Cloud Firestore, permitiendo la administración centralizada de destinos turísticos para su consumo desde la aplicación móvil.
+
+**Funcionalidades implementadas:**
+- ✅ **CRUD completo de destinos turísticos** (Crear, Leer, Actualizar, Eliminar)
+- ✅ **Integración con Firebase Firestore** para almacenamiento en tiempo real
+- ✅ **Panel de administración** con interfaz intuitiva
+- ✅ **Formularios de gestión** con validación de datos
+- ✅ **Categorización de destinos** (playa, montaña, ciudad, cultural)
+- ✅ **Almacenamiento de información geográfica** (coordenadas, país, ciudad)
+- ✅ **Sincronización en tiempo real** mediante Firestore streams
+- ✅ **Arquitectura escalable** preparada para futuras mejoras
+
+---
+
 ## Descripción
 
 TripMate es un trip planner que permite a los usuarios organizar y gestionar sus viajes de manera eficiente. El proyecto está actualmente en desarrollo con funcionalidades clave ya implementadas.
@@ -43,8 +60,25 @@ TripMate es un trip planner que permite a los usuarios organizar y gestionar sus
 - Configuración de unidades de medida (km/millas)
 - Ajustes de notificaciones y privacidad
 
+### ✅ Sistema de Gestión de Contenidos
+- **Panel de administración de destinos turísticos** completamente funcional
+- CRUD completo: crear, leer, actualizar y eliminar destinos
+- Integración con Firebase Cloud Firestore para persistencia de datos
+- Formularios con validación de campos obligatorios
+- Categorización por tipo de destino (playa, montaña, ciudad, cultural)
+- Almacenamiento de coordenadas geográficas (latitud/longitud)
+- Sincronización en tiempo real con la base de datos
+- Interfaz intuitiva con iconos y colores por categoría
+
 ## Capturas de Pantalla
 
+### Gestión de Contenidos (Nuevo)
+<div align="center">
+  <img src="screenshots/destinations.png" width="200" />
+  <img src="screenshots/create_destination.png" width="200" />
+</div>
+
+### Funcionalidades Principales
 <div align="center">
   <img src="screenshots/main_menu.png" width="200" />
   <img src="screenshots/trips.png" width="200" />
@@ -59,6 +93,8 @@ TripMate es un trip planner que permite a los usuarios organizar y gestionar sus
 
 ## Tecnologías
 
-- Flutter
-- Google Maps API
-- Geolocalización
+- **Flutter** - Framework de desarrollo multiplataforma
+- **Firebase Cloud Firestore** - Base de datos NoSQL en tiempo real
+- **Google Maps API** - Integración de mapas y geolocalización
+- **Geolocator** - Servicios de ubicación
+- **Flutter Secure Storage** - Almacenamiento seguro local

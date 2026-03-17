@@ -5,6 +5,7 @@ import 'preferences_screen.dart';
 import 'distance_calculator_screen.dart';
 import 'trips_screen.dart';
 import 'trip_history_screen.dart';
+import 'destinations_admin_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,6 +56,22 @@ class HomeScreen extends StatelessWidget {
               'View completed trip summaries',
               Icons.history,
               const TripHistoryScreen(),
+            ),
+            const SizedBox(height: 24),
+            const Text(
+              'Content Management',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 12),
+            _buildFeatureCard(
+              context,
+              'Manage Destinations',
+              'Add, edit and manage tourist destinations',
+              Icons.explore,
+              const DestinationsAdminScreen(),
             ),
             const SizedBox(height: 24),
             const Text(
